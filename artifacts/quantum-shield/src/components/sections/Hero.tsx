@@ -13,7 +13,7 @@ export default function Hero() {
       {/* Mercor-style full-bleed atmospheric orb — positioned right */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <img
-          src="/hero-orb.jpg"
+          src="/hero-orb_2.jpg"
           alt=""
           aria-hidden="true"
           className="absolute top-1/2 right-[-10%] -translate-y-1/2 w-[75vw] md:w-[60vw] aspect-square object-cover rounded-full opacity-90 mix-blend-screen select-none"
@@ -46,7 +46,7 @@ export default function Hero() {
         className="relative z-10 w-full px-6 md:px-12 flex justify-between items-end border-t border-border/50 pt-6"
       >
         <div className="font-mono text-[10px] md:text-xs text-primary uppercase tracking-[0.3em] max-w-[200px] md:max-w-none leading-relaxed">
-          For Asia Pacific and Critical Infrastructure
+          Defending Governments, Critical Infrastructure &amp; Enterprise — Worldwide
         </div>
         <div className="font-mono text-[10px] md:text-xs text-muted-foreground uppercase tracking-widest text-right max-w-xs hidden md:block leading-relaxed">
           Protection at the frontier of what's possible.

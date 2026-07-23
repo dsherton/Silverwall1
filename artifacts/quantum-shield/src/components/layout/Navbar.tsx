@@ -35,10 +35,10 @@ export default function Navbar() {
 
         {/* Right: Stacked Editorial Nav */}
         <nav className="flex flex-col items-end gap-1 font-mono text-[10px] md:text-xs text-muted-foreground uppercase tracking-[0.3em]">
-          <button onClick={() => scrollTo("premise")} className="hover:text-primary transition-colors duration-300 py-1 text-right">Premise</button>
-          <button onClick={() => scrollTo("services")} className="hover:text-primary transition-colors duration-300 py-1 text-right">Modules</button>
-          <button onClick={() => scrollTo("presence")} className="hover:text-primary transition-colors duration-300 py-1 text-right">Presence</button>
-          <button onClick={() => scrollTo("contact")} className="hover:text-primary transition-colors duration-300 py-1 text-primary text-right mt-4 border-b border-primary/30 hover:border-primary">Initiate Channel</button>
+          <button onClick={() => scrollTo("premise")} className="hover:text-primary transition-colors duration-300 py-1 text-right">Sovereignty</button>
+          <button onClick={() => scrollTo("services")} className="hover:text-primary transition-colors duration-300 py-1 text-right">Defense</button>
+          <button onClick={() => scrollTo("presence")} className="hover:text-primary transition-colors duration-300 py-1 text-right">Operations</button>
+          <button onClick={() => scrollTo("contact")} className="hover:text-primary transition-colors duration-300 py-1 text-primary text-right mt-4 border-b border-primary/30 hover:border-primary">Request Briefing</button>
         </nav>
       </div>
     </motion.header>

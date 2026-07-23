@@ -20,15 +20,15 @@ export default function Contact() {
           
           <div>
             <div className="text-primary text-[10px] md:text-xs tracking-[0.3em] uppercase mb-8 font-mono">
-              [04] Secure Handshake
+              [04] Classified Briefing
             </div>
             <h2 className="font-heading text-6xl md:text-8xl lg:text-[8rem] font-bold uppercase tracking-tighter leading-[0.85] mb-12">
-              Initiate <br/>
-              Secure <br/>
-              Channel
+              Request <br/>
+              a Private <br/>
+              Briefing
             </h2>
             <p className="font-mono text-xs md:text-sm text-muted-foreground max-w-md uppercase tracking-widest leading-loose border-l border-primary/30 pl-6">
-              Disclose minimal operational details. A sovereign-cleared architect will establish encrypted contact within 4 hours.
+              Share the minimum. A sovereign-cleared principal will establish encrypted contact within 4 hours and walk you through your current exposure.
             </p>
           </div>
 
@@ -54,15 +54,15 @@ export default function Contact() {
                   className="py-16 flex flex-col items-center text-center gap-6"
                 >
                   <CheckCircle2 className="w-20 h-20 text-primary" />
-                  <h3 className="font-heading text-3xl uppercase tracking-widest text-primary font-bold">Handshake Confirmed</h3>
+                  <h3 className="font-heading text-3xl uppercase tracking-widest text-primary font-bold">Briefing Requested</h3>
                   <p className="text-xs text-muted-foreground max-w-sm uppercase tracking-widest leading-loose">
-                    Your transmission has been encrypted and securely routed. Await contact.
+                    Received and encrypted. A principal will reach out within 4 hours.
                   </p>
                   <button 
                     onClick={() => setSubmitted(false)}
                     className="mt-8 text-[10px] text-muted-foreground hover:text-primary transition-colors underline underline-offset-8 uppercase tracking-[0.2em]"
                   >
-                    Initiate New Channel
+                    Submit Another Request
                   </button>
                 </motion.div>
               ) : (
@@ -102,7 +102,7 @@ export default function Contact() {
                       type="submit"
                       className="w-full bg-primary/5 border border-primary/50 text-primary py-6 uppercase tracking-[0.3em] text-xs hover:bg-primary hover:text-primary-foreground transition-all duration-500 font-bold"
                     >
-                      Transmit Data
+                      Send Request
                     </button>
                   </div>
                 </form>

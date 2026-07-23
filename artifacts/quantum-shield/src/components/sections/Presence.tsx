@@ -11,7 +11,7 @@ export default function Presence() {
           
           <div className="lg:col-span-5">
             <div className="text-primary text-[10px] md:text-xs tracking-[0.3em] uppercase mb-8 font-mono">
-              [03] Theatre of Operations
+              [03] Forward Operating Bases
             </div>
             <h2 className="font-heading text-6xl md:text-8xl lg:text-[7.5rem] font-bold uppercase tracking-tighter leading-[0.85] mb-12">
               APAC <br className="hidden md:block"/>
