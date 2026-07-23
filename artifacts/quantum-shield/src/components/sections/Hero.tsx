@@ -46,7 +46,7 @@ export default function Hero() {
         className="relative z-10 w-full px-6 md:px-12 flex justify-between items-end border-t border-border/50 pt-6"
       >
         <div className="font-mono text-[10px] md:text-xs text-primary uppercase tracking-[0.3em] max-w-[200px] md:max-w-none leading-relaxed">
-          Defending Governments, Critical Infrastructure &amp; Enterprise — Worldwide
+          Defending Infrastructure, Data, Property &amp; Enterprise — Worldwide
         </div>
         <div className="font-mono text-[10px] md:text-xs text-muted-foreground uppercase tracking-widest text-right max-w-xs hidden md:block leading-relaxed">
           Protection at the frontier of what's possible.

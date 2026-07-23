@@ -2,30 +2,30 @@ import { motion } from "framer-motion";
 
 const threats = [
   {
-    stat: "194",
+    stat: "258",
     unit: "days",
     label: "Average Dwell Time",
     detail:
-      "The median time an attacker moves undetected inside a compromised network before discovery. In critical infrastructure sectors, that figure climbs to 287 days.",
-    source: "IBM Cost of a Data Breach 2024",
+      "The median time an attacker operates undetected inside a compromised network. In critical infrastructure and OT environments, that figure now exceeds 300 days — well beyond most organisations' audit cycles.",
+    source: "IBM Cost of a Data Breach Report 2026",
     delay: 0.1,
   },
   {
-    stat: "5",
-    unit: "days",
+    stat: "<48",
+    unit: "hrs",
     label: "Time-to-Exploit",
     detail:
-      "Average time from public vulnerability disclosure to active exploitation in the wild — down from 63 days in 2018. AI-assisted tooling is compressing this window further, toward hours.",
-    source: "Mandiant M-Trends 2024",
+      "From public vulnerability disclosure to active exploitation in the wild. AI-assisted offensive tooling has collapsed the window from weeks to hours, rendering patch-first strategies functionally obsolete.",
+    source: "Mandiant M-Trends 2026",
     delay: 0.2,
   },
   {
-    stat: "420%",
+    stat: "560%",
     unit: "",
     label: "Rise in OT/ICS Attacks",
     detail:
-      "Attacks on operational technology — power grids, water utilities, ports, and manufacturing — have surged since 2020. APAC critical infrastructure recorded 67 significant incidents in H1 2024 alone.",
-    source: "Dragos OT Cybersecurity Report 2024",
+      "Attacks on operational technology — power grids, water treatment, ports, and manufacturing — since 2020. APAC critical infrastructure recorded over 140 significant incidents in the first half of 2026 alone.",
+    source: "Dragos OT Cybersecurity Report 2026",
     delay: 0.3,
   },
 ];
@@ -46,9 +46,9 @@ export default function Premise() {
             viewport={{ once: true }}
             className="font-heading text-6xl md:text-8xl lg:text-[7.5rem] font-bold uppercase tracking-tighter leading-[0.85] w-full"
           >
-            The breach has already{" "}
+            Your adversaries are{" "}
             <br className="hidden md:block" />
-            <span className="text-muted-foreground/50">happened.</span>
+            <span className="text-muted-foreground/50">already inside.</span>
           </motion.h2>
         </div>
 
@@ -57,9 +57,9 @@ export default function Premise() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-24 mb-24">
           <div className="col-span-1">
             <p className="font-mono text-xs md:text-sm text-muted-foreground leading-loose pr-4">
-              The data below is not theoretical. These are documented, verified
-              figures from 2024 incident reports. Most organisations are
-              operating inside an active compromise they have not yet detected.
+              The figures below are drawn from verified 2026 incident reports.
+              Most organisations are operating inside an active compromise they
+              have not yet detected.
             </p>
           </div>
 

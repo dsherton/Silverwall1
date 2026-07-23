@@ -25,13 +25,8 @@ export default function Navbar() {
           </span>
         </Link>
         
-        {/* Center: Thin Tagline / Status */}
-        <div className="hidden md:flex flex-1 justify-center pt-1">
-          <div className="font-mono text-[10px] text-primary/70 uppercase tracking-widest flex items-center gap-3">
-            <span className="w-1.5 h-1.5 bg-primary animate-pulse rounded-full" />
-            System Status: Nominal
-          </div>
-        </div>
+        {/* Center spacer */}
+        <div className="hidden md:flex flex-1" />
 
         {/* Right: Stacked Editorial Nav */}
         <nav className="flex flex-col items-end gap-1 font-mono text-[10px] md:text-xs text-muted-foreground uppercase tracking-[0.3em]">
