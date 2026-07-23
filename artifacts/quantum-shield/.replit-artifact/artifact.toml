@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "QuantumShield — Cybersecurity Firm"
+version = "1.0.0"
+id = "artifacts/quantum-shield"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 26089
+
+[services.development]
+run = "pnpm --filter @workspace/quantum-shield run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/quantum-shield", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/quantum-shield/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "26089"
+BASE_PATH = "/"
