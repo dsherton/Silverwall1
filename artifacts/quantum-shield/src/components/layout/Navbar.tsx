@@ -20,7 +20,7 @@ export default function Navbar() {
         <Link href="/" className="group flex items-center gap-2 cursor-pointer">
           <div className="w-3 h-3 bg-primary rounded-none group-hover:shadow-[0_0_10px_#00E5FF] transition-shadow duration-300" />
           <span className="font-heading font-bold text-sm tracking-[0.2em] text-foreground uppercase">
-            Nexus Quantum
+            Silverwall
           </span>
         </Link>
         

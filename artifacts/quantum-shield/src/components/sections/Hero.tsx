@@ -28,9 +28,8 @@ export default function Hero() {
           </div>
           
           <h1 className="font-heading text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter uppercase leading-[0.85] text-foreground mix-blend-difference">
-            <span className="block text-glow">Nexus</span>
-            <span className="block text-muted-foreground/40">Quantum</span>
-            <span className="block text-glow">Security</span>
+            <span className="block text-glow">Silver</span>
+            <span className="block text-muted-foreground/40">wall</span>
           </h1>
         </motion.div>
 

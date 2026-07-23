@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="col-span-1 md:col-span-2">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-4 h-4 bg-primary" />
-            <h2 className="font-heading text-2xl font-bold tracking-widest uppercase">Nexus Quantum Security</h2>
+            <h2 className="font-heading text-2xl font-bold tracking-widest uppercase">Silverwall</h2>
           </div>
           <p className="text-muted-foreground font-mono text-sm max-w-md">
             Protection at the frontier of what's possible. 
@@ -43,7 +43,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between font-mono text-xs text-muted-foreground">
-        <p>&copy; {new Date().getFullYear()} NEXUS QUANTUM SECURITY. ALL RIGHTS RESERVED.</p>
+        <p>&copy; {new Date().getFullYear()} SILVERWALL. ALL RIGHTS RESERVED.</p>
         <div className="flex gap-4 mt-4 md:mt-0">
           <span>SECURE.</span>
           <span>SOVEREIGN.</span>

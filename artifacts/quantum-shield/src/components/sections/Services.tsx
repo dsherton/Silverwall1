@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Server, Cpu, Fingerprint, Lock, Database } from "lucide-react";
+import { Server, Cpu, Fingerprint, Lock, Database, Smartphone } from "lucide-react";
 
 const services = [
   {
@@ -41,6 +41,14 @@ const services = [
     description: "Multi-modal biometric authentication, liveness detection, deepfake forensics, and executive identity assurance against AI-generated spoofing.",
     status: "ACTIVE_MODULE",
     classification: "IDENTITY"
+  },
+  {
+    id: "06",
+    title: "Mobile Device Protection Architecture",
+    icon: <Smartphone className="w-8 h-8" />,
+    description: "End-to-end mobile security for enterprise and government fleets. Secure enclaves, containerised work profiles, EMM/MDM hardening, rogue network detection, and zero-click exploit mitigation for iOS and Android environments.",
+    status: "ACTIVE_MODULE",
+    classification: "MOBILE_SEC"
   }
 ];
 
@@ -58,7 +66,7 @@ export default function Services() {
           </h2>
           <div className="mt-4 flex items-center gap-4 font-mono text-xs text-primary uppercase tracking-widest">
             <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            5 Systems Online
+            6 Systems Online
           </div>
         </div>
 
