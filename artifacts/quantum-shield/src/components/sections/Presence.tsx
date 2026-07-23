@@ -68,7 +68,7 @@ export default function Presence() {
             </div>
             
             {/* Scanning Overlay */}
-            <div className="absolute inset-0 bg-[linear-gradient(rgba(0,229,255,0.03)_1px,transparent_1px)] bg-[length:100%_4px] pointer-events-none" />
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(232,64,32,0.04)_1px,transparent_1px)] bg-[length:100%_4px] pointer-events-none" />
           </div>
 
         </div>

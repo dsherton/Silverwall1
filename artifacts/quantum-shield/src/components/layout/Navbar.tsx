@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="flex items-start justify-between p-6 md:p-12 pointer-events-auto">
         {/* Left: Spread Logo */}
         <Link href="/" className="group flex items-center gap-3 cursor-pointer w-auto">
-          <div className="w-4 h-4 bg-primary rounded-none group-hover:shadow-[0_0_15px_#00E5FF] transition-shadow duration-300" />
+          <div className="w-4 h-4 bg-primary rounded-none group-hover:shadow-[0_0_15px_#E84020] transition-shadow duration-300" />
           <span className="font-heading font-bold text-xl md:text-2xl tracking-[0.2em] text-foreground uppercase">
             Silverwall
           </span>

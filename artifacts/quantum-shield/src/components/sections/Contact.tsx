@@ -32,7 +32,7 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="border border-border/50 bg-[#020306] p-1 font-mono relative overflow-hidden group">
+          <div className="border border-border/50 bg-[#060100] p-1 font-mono relative overflow-hidden group">
             <div className="absolute inset-0 bg-noise opacity-10 pointer-events-none" />
             <div className="border-b border-border/50 p-4 bg-black flex items-center justify-between text-[10px] text-muted-foreground uppercase tracking-widest">
               <div className="flex gap-3">
