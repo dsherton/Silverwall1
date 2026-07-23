@@ -3,38 +3,37 @@ import { Shield, Lock, Activity } from "lucide-react";
 
 export default function Premise() {
   return (
-    <section id="premise" className="relative py-32 px-6 md:px-12 bg-background border-t border-border">
-      <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
-          
-          <div className="lg:col-span-4 font-mono">
-            <motion.div 
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6 }}
-              className="sticky top-32"
-            >
-              <div className="text-primary text-xs tracking-widest uppercase mb-4 flex items-center gap-2">
-                <span className="w-8 h-px bg-primary" />
-                The Premise
-              </div>
-              <h2 className="font-heading text-4xl font-semibold uppercase tracking-tight mb-6">
-                Threats have outpaced conventional defences.
-              </h2>
-              <div className="space-y-4 text-sm text-muted-foreground border-l border-primary/30 pl-4">
-                <p>
-                  Most organisations are fighting tomorrow's wars with yesterday's weapons.
-                </p>
-                <p>
-                  Quantum computing will render RSA/ECC obsolete. Adversarial AI is automating zero-day discovery. 
-                  The perimeter no longer exists.
-                </p>
-              </div>
-            </motion.div>
+    <section id="premise" className="relative pt-32 pb-16 bg-background">
+      {/* Full bleed top horizontal rule */}
+      <div className="w-full h-[1px] bg-border mb-12" />
+      
+      <div className="px-6 md:px-12 w-full max-w-[1800px] mx-auto">
+        <div className="mb-24">
+          <div className="text-primary text-[10px] md:text-xs tracking-[0.3em] uppercase mb-8 font-mono">
+            [01] The Premise
           </div>
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="font-heading text-6xl md:text-8xl lg:text-[7.5rem] font-bold uppercase tracking-tighter leading-[0.85] w-full"
+          >
+            Threats have outpaced <br className="hidden md:block" />
+            <span className="text-muted-foreground/50">conventional defences.</span>
+          </motion.h2>
+        </div>
 
-          <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Full bleed separator */}
+        <div className="w-full h-[1px] bg-border mb-12" />
+
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-24">
+          <div className="col-span-1">
+             <p className="font-mono text-xs md:text-sm text-muted-foreground leading-loose pr-4">
+               Most organisations are fighting tomorrow's wars with yesterday's weapons. Quantum computing will render RSA/ECC obsolete. Adversarial AI is automating zero-day discovery. The perimeter no longer exists.
+             </p>
+          </div>
+          
+          <div className="col-span-1 md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
             <Card 
               icon={<Shield className="w-6 h-6 text-primary" />}
               title="State-Level Actors"
@@ -53,12 +52,7 @@ export default function Premise() {
               desc="Attackers use AI to bypass heuristic detection. We deploy autonomous counter-AI that reacts in milliseconds, not minutes."
               delay={0.3}
             />
-            <div className="p-8 border border-border bg-card/50 flex flex-col justify-center items-center text-center">
-              <span className="font-mono text-2xl text-primary font-bold tracking-widest mb-2">0 ZERO</span>
-              <span className="font-mono text-xs text-muted-foreground uppercase tracking-widest">Trust Assumption</span>
-            </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -70,14 +64,14 @@ function Card({ icon, title, desc, delay }: { icon: React.ReactNode, title: stri
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true }}
       transition={{ duration: 0.6, delay }}
-      className="p-8 border border-border bg-card group hover:border-primary/50 transition-colors duration-500"
+      className="flex flex-col group"
     >
-      <div className="mb-6 bg-background border border-border w-12 h-12 flex items-center justify-center group-hover:border-primary/50 transition-colors duration-500">
+      <div className="mb-8 w-12 h-12 flex items-center justify-center border border-border bg-card/50 group-hover:border-primary/50 transition-colors duration-500">
         {icon}
       </div>
-      <h3 className="font-heading text-xl font-medium mb-3 tracking-wide">{title}</h3>
+      <h3 className="font-heading text-3xl font-bold mb-4 tracking-tight uppercase group-hover:text-primary transition-colors duration-500">{title}</h3>
       <p className="font-sans text-sm text-muted-foreground leading-relaxed">
         {desc}
       </p>
