@@ -46,9 +46,9 @@ export default function Premise() {
             viewport={{ once: true }}
             className="font-heading text-6xl md:text-8xl lg:text-[7.5rem] font-bold uppercase tracking-tighter leading-[0.85] w-full"
           >
-            Sovereignty begins with{" "}
+            Infrastructure{" "}
             <br className="hidden md:block" />
-            <span className="text-muted-foreground/50">knowing your ground.</span>
+            <span className="text-muted-foreground/50">Sovereignty.</span>
           </motion.h2>
         </div>
 
