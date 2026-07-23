@@ -10,10 +10,19 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[100dvh] w-full flex flex-col justify-between overflow-hidden bg-background pt-32 pb-8">
-      {/* Full-bleed atmospheric right-biased orb/arc */}
-      <div className="absolute top-[40%] right-0 -translate-y-1/2 translate-x-1/3 w-[90vw] md:w-[70vw] aspect-square bg-primary/10 blur-[120px] md:blur-[180px] rounded-full pointer-events-none" />
-      <div className="absolute top-[20%] right-[-10%] w-[50vw] aspect-square border-[1px] border-primary/20 rounded-full pointer-events-none" />
-      <div className="absolute top-[30%] right-[-20%] w-[60vw] aspect-square border-[1px] border-primary/10 rounded-full pointer-events-none" />
+      {/* Mercor-style full-bleed atmospheric orb — positioned right */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <img
+          src="/hero-orb.jpg"
+          alt=""
+          aria-hidden="true"
+          className="absolute top-1/2 right-[-10%] -translate-y-1/2 w-[75vw] md:w-[60vw] aspect-square object-cover rounded-full opacity-90 mix-blend-screen select-none"
+          draggable={false}
+        />
+        {/* Soft vignette so left text area reads cleanly */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_100%_at_0%_50%,hsl(0_65%_3%)_30%,transparent_80%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_50%_100%,hsl(0_65%_3%)_0%,transparent_80%)]" />
+      </div>
 
       {/* Central typography */}
       <div className="relative z-10 w-full flex-1 flex flex-col justify-center">
