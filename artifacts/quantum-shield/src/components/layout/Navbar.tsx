@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ShieldCheck } from "lucide-react";
 
 export default function Navbar() {
   const scrollTo = (id: string) => {
@@ -21,7 +20,26 @@ export default function Navbar() {
         {/* Left: Refined wordmark */}
         <Link href="/" className="group flex items-center gap-4 cursor-pointer">
           <div className="w-[2px] h-7 bg-primary group-hover:h-9 transition-all duration-300" />
-          <ShieldCheck className="w-4 h-4 text-primary shrink-0" strokeWidth={1.5} />
+          {/* Custom heraldic shield — angular, no tick */}
+          <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0" aria-hidden="true">
+            <path
+              d="M8 1L1 4V10C1 14.1 4.1 17.9 8 19C11.9 17.9 15 14.1 15 10V4L8 1Z"
+              stroke="currentColor"
+              strokeWidth="1"
+              strokeLinejoin="round"
+              className="text-primary"
+            />
+            <path
+              d="M8 1L1 4V10C1 14.1 4.1 17.9 8 19C11.9 17.9 15 14.1 15 10V4L8 1Z"
+              fill="currentColor"
+              fillOpacity="0.08"
+              className="text-primary"
+            />
+            {/* centre dividing line */}
+            <line x1="8" y1="3" x2="8" y2="17" stroke="currentColor" strokeWidth="0.6" strokeOpacity="0.4" className="text-primary" />
+            {/* horizontal bar */}
+            <line x1="2.5" y1="10" x2="13.5" y2="10" stroke="currentColor" strokeWidth="0.6" strokeOpacity="0.4" className="text-primary" />
+          </svg>
           <div className="flex flex-col gap-0.5">
             <span className="font-heading font-bold text-sm md:text-base tracking-[0.28em] text-foreground uppercase leading-none">
               Silverwall
