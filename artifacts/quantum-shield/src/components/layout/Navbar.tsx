@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { ShieldCheck } from "lucide-react";
 
 export default function Navbar() {
   const scrollTo = (id: string) => {
@@ -20,6 +21,7 @@ export default function Navbar() {
         {/* Left: Refined wordmark */}
         <Link href="/" className="group flex items-center gap-4 cursor-pointer">
           <div className="w-[2px] h-7 bg-primary group-hover:h-9 transition-all duration-300" />
+          <ShieldCheck className="w-4 h-4 text-primary shrink-0" strokeWidth={1.5} />
           <div className="flex flex-col gap-0.5">
             <span className="font-heading font-bold text-sm md:text-base tracking-[0.28em] text-foreground uppercase leading-none">
               Silverwall
