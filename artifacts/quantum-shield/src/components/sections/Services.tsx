@@ -44,7 +44,7 @@ const services = [
   },
   {
     id: "06",
-    title: "Mobile Protection",
+    title: "Mobile Device Defense",
     icon: <Smartphone className="w-6 h-6" />,
     description: "End-to-end mobile security for enterprise and government fleets. Secure enclaves, EMM/MDM hardening, and zero-click exploit mitigation.",
     status: "ACTIVE_MODULE",
@@ -65,7 +65,7 @@ export default function Services() {
               [02] Operational Modules
             </div>
             <h2 className="font-heading text-6xl md:text-8xl lg:text-[7.5rem] font-bold uppercase tracking-tighter leading-[0.85]">
-              Systems Online
+              Defence<br/>Capabilities
             </h2>
           </div>
           

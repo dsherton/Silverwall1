@@ -14,8 +14,8 @@ export default function Presence() {
               [03] Forward Operating Bases
             </div>
             <h2 className="font-heading text-6xl md:text-8xl lg:text-[7.5rem] font-bold uppercase tracking-tighter leading-[0.85] mb-12">
-              APAC <br className="hidden md:block"/>
-              Presence
+              Global <br className="hidden md:block"/>
+              <span className="text-muted-foreground/50">APAC</span> Presence
             </h2>
             <p className="text-muted-foreground mb-16 max-w-md font-sans text-sm md:text-base leading-relaxed">
               Operating from hardened facilities in Melbourne and Singapore, we provide contiguous overwatch for the APAC region. Our physical infrastructure is sovereign, strictly audited, and maintained entirely air-gapped from commercial cloud providers.

@@ -13,7 +13,7 @@ export default function Hero() {
       {/* Mercor-style full-bleed atmospheric orb — positioned right */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <img
-          src="/hero-rook.jpg"
+          src="/hero-rook-v2.jpg"
           alt=""
           aria-hidden="true"
           className="absolute top-1/2 right-[-10%] -translate-y-1/2 w-[75vw] md:w-[60vw] aspect-square object-cover rounded-full opacity-90 mix-blend-screen select-none"
