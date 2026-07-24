@@ -37,9 +37,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full flex flex-col items-center"
+          className="w-full px-6 md:px-12"
         >
-          <h1 className="font-heading font-bold uppercase text-[15vw] leading-[0.75] tracking-tighter w-full block text-center whitespace-nowrap mix-blend-difference text-foreground">
+          <h1 className="font-heading font-bold uppercase text-[14vw] md:text-[7.5vw] leading-[0.85] tracking-tighter text-left text-foreground max-w-full md:max-w-[46%]">
             SILVERWALL
           </h1>
         </motion.div>

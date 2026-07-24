@@ -17,12 +17,17 @@ export default function Navbar() {
       className="fixed top-0 left-0 w-full z-50 mix-blend-difference pointer-events-none"
     >
       <div className="flex items-start justify-between p-6 md:p-12 pointer-events-auto">
-        {/* Left: Spread Logo */}
-        <Link href="/" className="group flex items-center gap-3 cursor-pointer w-auto">
-          <div className="w-4 h-4 bg-primary rounded-none group-hover:shadow-[0_0_15px_#E84020] transition-shadow duration-300" />
-          <span className="font-heading font-bold text-xl md:text-2xl tracking-[0.2em] text-foreground uppercase">
-            Silverwall
-          </span>
+        {/* Left: Refined wordmark */}
+        <Link href="/" className="group flex items-center gap-4 cursor-pointer">
+          <div className="w-[2px] h-7 bg-primary group-hover:h-9 transition-all duration-300" />
+          <div className="flex flex-col gap-0.5">
+            <span className="font-heading font-bold text-sm md:text-base tracking-[0.28em] text-foreground uppercase leading-none">
+              Silverwall
+            </span>
+            <span className="font-mono text-[8px] md:text-[9px] text-primary/70 tracking-[0.22em] uppercase leading-none">
+              Cyber Defense
+            </span>
+          </div>
         </Link>
         
         {/* Center spacer */}
