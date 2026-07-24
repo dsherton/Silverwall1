@@ -44,10 +44,10 @@ export default function Premise() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-heading text-6xl md:text-8xl lg:text-[7.5rem] font-bold uppercase tracking-tighter leading-[0.85] w-full"
+            className="font-heading text-[10vw] sm:text-6xl md:text-8xl lg:text-[7.5rem] font-bold uppercase tracking-tighter leading-[0.85] w-full"
           >
-            Sovereign Infrastructure{" "}
-            <br className="hidden md:block" />
+            Sovereign<br/>
+            Infrastructure{" "}
             <span className="text-muted-foreground/50">Defense.</span>
           </motion.h2>
         </div>
