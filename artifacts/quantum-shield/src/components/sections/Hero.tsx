@@ -10,18 +10,25 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[100dvh] w-full flex flex-col justify-between overflow-hidden bg-background pt-32 pb-8">
-      {/* Mercor-style full-bleed atmospheric orb — positioned right */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <img
-          src="/hero-rook-v2.jpg"
-          alt=""
-          aria-hidden="true"
-          className="absolute top-1/2 right-[-10%] -translate-y-1/2 w-[75vw] md:w-[60vw] aspect-square object-cover rounded-full opacity-90 mix-blend-screen select-none"
-          draggable={false}
-        />
-        {/* Soft vignette so left text area reads cleanly */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_100%_at_0%_50%,hsl(0_65%_3%)_30%,transparent_80%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_50%_100%,hsl(0_65%_3%)_0%,transparent_80%)]" />
+
+      {/* Full right-panel rook — Fenox-style edge-to-edge */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Image fills the right 58% on desktop, large bottom panel on mobile */}
+        <div className="absolute bottom-0 right-0 w-full h-[75vh] md:w-[58%] md:h-full">
+          <img
+            src="/hero-rook-v2.jpg"
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover object-[center_80%] md:object-center select-none"
+            draggable={false}
+          />
+          {/* Left fade — blends rook into background */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(0_65%_3%)_0%,transparent_50%)] md:bg-[linear-gradient(to_right,hsl(0_65%_3%)_0%,transparent_40%)]" />
+          {/* Top fade on mobile so title text stays readable */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_bottom,hsl(0_65%_3%)_0%,transparent_35%)] md:hidden" />
+        </div>
+        {/* Bottom vignette */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-[linear-gradient(to_top,hsl(0_65%_3%),transparent)]" />
       </div>
 
       {/* Central typography */}
@@ -37,9 +44,9 @@ export default function Hero() {
           </h1>
         </motion.div>
       </div>
-      
+
       {/* Bottom anchored strip */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.8 }}
@@ -52,7 +59,7 @@ export default function Hero() {
           Protection at the frontier of what's possible.
         </div>
       </motion.div>
-      
+
       {/* HUD elements at extreme edges */}
       {mounted && (
         <>
