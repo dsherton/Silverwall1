@@ -1,9 +1,12 @@
 import express, { type Express } from "express";
 import cors from "cors";
-// FIX 1: Change the named import to a default import for pino-http
-import pinoHttp from 'pino-http';
+// Import the module directly as a raw object
+import * as pinoHttpModule from 'pino-http';
 import router from "./routes";
 import { logger } from "./lib/logger";
+
+// FIX: Force TypeScript to resolve the function whether it is packed as .default or the core module
+const pinoHttp = (pinoHttpModule.default || pinoHttpModule) as any;
 
 const app: Express = express();
 
@@ -11,7 +14,6 @@ app.use(
   pinoHttp({
     logger,
     serializers: {
-      // FIX 2: Explicitly type the req parameter as 'any' to bypass strict checks
       req(req: any) {
         return {
           id: req.id,
@@ -19,7 +21,6 @@ app.use(
           url: req.url?.split("?")[0],
         };
       },
-      // FIX 3: Explicitly type the res parameter as 'any' to bypass strict checks
       res(res: any) {
         return {
           statusCode: res.statusCode,
