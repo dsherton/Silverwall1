@@ -1,8 +1,8 @@
 import express, { type Express } from "express";
 import cors from "cors";
 import * as pinoHttpModule from 'pino-http';
-// FIX: Explicitly target /index to satisfy ES Module structural path lookups
-import router from "./routes/index";
+// FIX: Added the explicit .js extension for native ES Modules support in Vercel
+import router from "./routes/index.js";
 import { logger } from "./lib/logger";
 
 const pinoHttp = (pinoHttpModule.default || pinoHttpModule) as any;
