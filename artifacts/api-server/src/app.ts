@@ -1,11 +1,10 @@
 import express, { type Express } from "express";
 import cors from "cors";
-// Import the module directly as a raw object
 import * as pinoHttpModule from 'pino-http';
-import router from "./routes";
+// FIX: Explicitly target /index to satisfy ES Module structural path lookups
+import router from "./routes/index";
 import { logger } from "./lib/logger";
 
-// FIX: Force TypeScript to resolve the function whether it is packed as .default or the core module
 const pinoHttp = (pinoHttpModule.default || pinoHttpModule) as any;
 
 const app: Express = express();
@@ -18,7 +17,7 @@ app.use(
         return {
           id: req.id,
           method: req.method,
-          url: req.url?.split("?")[0],
+          url: req.url?.split("?"),
         };
       },
       res(res: any) {
