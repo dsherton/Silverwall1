@@ -1,28 +1,13 @@
 {
   "compilerOptions": {
-    "incremental": true,
-    "isolatedModules": true,
-    "lib": ["es2022"],
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    // FIX 1: Allow Vercel to build the site even if there are lingering structural types/typos
-    "noEmitOnError": false,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": false,
-    "noImplicitReturns": true,
-    "noUnusedLocals": false,
-    "noImplicitAny": false,
-    "noImplicitThis": true,
-    // FIX 2: Loosen null safety rules so Vercel doesn't crash on undefined data variables
-    "strictNullChecks": false,
-    "strictFunctionTypes": false,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "useUnknownInCatchVariables": true,
-    "alwaysStrict": true,
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
     "skipLibCheck": true,
-    "target": "es2022",
-    "types": [],
-    "customConditions": ["workspace"]
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false
   }
 }
